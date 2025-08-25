@@ -567,3 +567,5 @@ curl "http://localhost:8000/search?q=busca%20sem%C3%A2ntica&k=5"
 ---
 
 **Pronto.** É só colar a pasta e rodar. Se quiser, posso adaptar para **Next.js + API Routes** mantendo o mesmo contrato HTTP e os mesmos testes end‑to‑end sem mocks.
+
+- Desenvolvimento orientado a TDD. Sem uso de mocks ou fluxos simulados, apenas implementações pequenais e bem modularizadas reais.
