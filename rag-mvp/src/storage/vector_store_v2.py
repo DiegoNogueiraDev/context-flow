@@ -20,7 +20,10 @@ except ImportError:
     logging.warning("ChromaDB not available. Falling back to SQLite vector store.")
 
 from .vector_store import VectorStore as SQLiteVectorStore
-from ..core.models import Document
+try:
+    from ..core.models import Document
+except ImportError:
+    from core.models import Document
 
 
 class ChromaVectorStore:
@@ -448,7 +451,10 @@ class ChromaVectorStore:
                     doc.id = doc_id
                     
                     # Reconstruct chunks
-                    from ..core.models import Chunk
+                    try:
+                        from ..core.models import Chunk
+                    except ImportError:
+                        from core.models import Chunk
                     chunks = []
                     embeddings = []
                     

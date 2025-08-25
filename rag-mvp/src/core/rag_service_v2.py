@@ -11,12 +11,18 @@ from pathlib import Path
 
 from .document_processor import DocumentProcessor, EnhancedDocument
 from .embedding_service_v2 import EnhancedEmbeddingService
-from ..storage.vector_store_v2 import ChromaVectorStore
+try:
+    from ..storage.vector_store_v2 import ChromaVectorStore
+except ImportError:
+    from storage.vector_store_v2 import ChromaVectorStore
 
 # Fallback imports
 from .text_processor import TextProcessor
 from .embedding_service import EmbeddingService
-from ..storage.vector_store import VectorStore
+try:
+    from ..storage.vector_store import VectorStore
+except ImportError:
+    from storage.vector_store import VectorStore
 
 
 class EnhancedRAGService:

@@ -153,6 +153,8 @@ class EnhancedEmbeddingService:
     
     def generate_embedding(self, text: str) -> np.ndarray:
         """Generate embedding for a single text"""
+        if not isinstance(text, str):
+            raise TypeError("Text must be a string")
         if not text or not text.strip():
             raise ValueError("Text cannot be empty or whitespace only")
         
