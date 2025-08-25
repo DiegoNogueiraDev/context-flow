@@ -1,0 +1,4 @@
+2025-08-25 13:27:59,837 - INFO - {"document_id": "5ea17084-db86-4e2f-9093-bbea7bea66d4", "filename": "architecture_spec.md", "file_size_mb": 0.000576019287109375, "chunk_count": 2, "processing_time": 0.09839701652526855, "quality_score": 0.0} - User: system - Action: document_upload
+2025-08-25 13:28:32,040 - INFO - {"document_id": "a86b4a4d-7fd5-4093-b7d0-8d2a137cc0fd", "filename": "architecture_spec.md", "file_size_mb": 0.000576019287109375, "chunk_count": 2, "processing_time": 0.06793761253356934, "quality_score": 0.0} - User: system - Action: document_upload
+2025-08-25 13:28:32,065 - INFO - {"query_length": 23, "result_count": 3, "search_time": 0.024855375289916992, "filters_applied": false, "cross_document_correlation": true, "hierarchical_search": true} - User: system - Action: search
+2025-08-25 13:28:42,069 - INFO - {"total_documents_processed": 1, "total_searches_performed": 1} - User: system - Action: service_shutdown
